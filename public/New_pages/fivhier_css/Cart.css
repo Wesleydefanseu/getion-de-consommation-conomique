@@ -1,0 +1,85 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+
+	--light: #F9F9F9;
+	--blue: #3C91E6;
+	--light-blue: #c3def4;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #DB504A;
+	--yellow: #FFCE26;
+	--light-yellow: #FFF2C6;
+	--orange: #FF8000;
+	--light-orange: #FFE0D3;
+	
+}
+
+html {
+	overflow-x: hidden;
+}
+.cart_value
+{
+margin-top: -5%;
+	margin-right: 2%;
+    margin-left: 70%;
+
+}
+.carttable
+{
+	width: 100%;
+	height:auto;
+	background-color: white;
+	margin-left:auto ;
+	margin-right: auto;
+	margin-top: -6.5%;
+}
+
+  /* tableau */
+  .tableau-style{
+	border-collapse: collapse;
+	min-width: 400px;
+	/* height: 60%; */
+	height:auto;
+	width:100% ; 
+	cursor: pointer;
+	margin: 100px auto;
+	border: 2px solid var(--orange);
+	bottom: -15px;
+	
+  }
+  thead tr{
+	background-color: var(--orange);
+	color: var(--light);
+	text-align: center;
+  }
+  th,td{
+	padding: 15px 20px;
+	height: auto;
+	text-align: center;
+  }
+  tbody tr,td,th{
+	color: var(--dark);
+	border: 1px solid  var(--light);
+  }
+  tbody tr:nth-child(even)
+  {
+  background-color: var(--light-orange);
+  }

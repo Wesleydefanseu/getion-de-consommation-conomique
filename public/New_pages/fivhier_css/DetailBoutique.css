@@ -1,0 +1,125 @@
+.bodyContaint {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    width: 1220px;
+    height: 34cqmax;
+}
+
+.column,
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    margin-left: 12px;
+    min-width: fit-content;
+
+
+}
+
+label {
+    font-weight: bolder;
+}
+
+.title,
+.recap {
+    background-color: #FFE0D3;
+    align-content: center;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    border-radius: 9px;
+    font-family: 'FontAwesome';
+    border: #ff8000 solid 2px;
+    box-shadow: 0 0 10px rgb(224, 220, 220);
+    color: #ff8000;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.title:hover {
+    color: #FFE0D3;
+    background-color: white;
+    border: #FFE0D3 solid 4px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+form h4 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+span {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+input,
+select {
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+
+}
+
+.submit {
+    color: white;
+    width: 300px;
+    height: 40px;
+    background-color: #ff8000;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tof {
+    height: 400px;
+    width: 580px;
+    margin-bottom: -400px;
+    border-radius: 15px;
+}
+
+.recaps {
+    display: grid;
+    margin-top: auto;
+    color: #ff8000;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.recap {
+    width: 110px;
+    height: 80px;
+}
+
+.recap h4 {
+    font-size: 18px;
+    color: black;
+}
+
+.tofH3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 12px;
+    color: #FF8000;
+    z-index: 2;
+    margin-left: 12px;
+}
+
+option {
+    display: flex;
+    flex-direction: row;
+}

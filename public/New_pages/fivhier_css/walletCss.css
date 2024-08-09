@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Wallet Styles */
+  .wallet-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px; 
+    flex: 1;
+  }
+  
+  .balance, .savings {
+    flex-basis: 30%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+    margin-top: 0;
+  }
+  
+  #current-balance, #debit-balance {
+    font-size: 36px;
+    font-weight: 700;
+    /* color: #4CAF50; */
+    color: #FF8000;
+  }
+
+  .savings{
+    margin-top: 30px;
+  } 
+  
+
+  .savings canvas {
+    height: 250px !important;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .wallet-info {
+      flex-direction: column;
+    }
+  
+    .balance, .savings {
+      flex-basis: auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  .menu__bar{
+    background-color: #333;
+    height: 70px;
+    width: 100%;
+    /* display: flex; */
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Styles de la sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    transition: left 0.3s;
+}
+
+.sidebar .profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 10px;
+    text-align: center;
+}
+.sidebar nav ul li a {
+    color: white;
+    display: table;
+    text-decoration: none;
+}
+
+.sidebar nav ul li a:hover {
+    color: #FF8000;
+}
+.nav-item{
+    position: relative;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.fas{
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+  
+  /* .deposit-withdraw {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .deposit-withdraw input,
+  .deposit-withdraw button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+  } */

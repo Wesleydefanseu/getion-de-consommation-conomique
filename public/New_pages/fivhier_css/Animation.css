@@ -1,0 +1,84 @@
+
+
+
+
+.wrapper.animate-signUp .form-wrapper.sign-in{
+   
+    animation: animateRotate 7s ease-in-out forwards;
+    animation-delay: .3s;
+    }
+
+
+.wrapper.animate-signIn .form-wrapper.sign-in{
+animation: animateSignIn 1.5s ease-in-out forwards;
+}
+
+@keyframes animateSignIn  {
+    
+   0%{
+    transform: translateX(0);
+   } 
+   50%{
+    transform: translateX(-500px);
+   } 
+
+   100%{
+    transform: translateX(0)rotate(7deg);
+   } 
+}
+
+
+
+
+.wrapper .form-wrapper.sign-up{
+  
+
+}
+
+.wrapper.animate-signIn .form-wrapper.sign-up{
+    animation: animateRotate .7s ease-in-out forwards;
+    animation-delay: .3s;
+    }
+
+
+
+    @keyframes  animateRotate {
+        0%{
+
+            transform: rotate(7deg);
+        }
+        100%{
+
+            transform: rotate(0);
+            z-index: 3;
+        }
+        
+    }
+
+
+    .wrapper.animate-signUp .form-wrapper.sign-up{
+        animation: animateSignUp 0.5s ease-in-out forwards;
+        }
+        
+        @keyframes animateSignUp  {
+            
+           0%{
+            transform: translateX(0);
+            z-index: 3;
+           } 
+           50%{
+            transform: translateX(500px);
+           } 
+        
+           100%{
+            transform: translateX(0) rotate(7deg);
+            left: auto;
+            right: auto;
+            
+           } 
+        }
+
+
+
+
+

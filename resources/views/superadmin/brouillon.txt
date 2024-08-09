@@ -1,0 +1,5 @@
+    @php
+                    $index=$id;
+                    @endphp
+
+                    @include('superadmin.detailVendeur',['param'=>$index])

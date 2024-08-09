@@ -1,0 +1,206 @@
+/* Styles de base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 600px; 
+}
+
+.menu__bar{
+    background-color: #333;
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+
+/* Styles de la sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    transition: left 0.3s;
+}
+
+.sidebar .profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 15px;
+    text-align: center;
+}
+.sidebar nav ul li a {
+    color: white;
+    display: table;
+    text-decoration: none;
+}
+
+.sidebar nav ul li a:hover {
+    color: #FF8000;
+}
+
+ul li ul.dropd li{
+    display: block;
+}
+ul li ul{
+    width: 120px;
+    margin-left: 100px;
+    background-color: #333;
+    /* position: absolute;
+    z-index: 999; */
+    display: none;
+}
+.dropd{
+    width: 120px;
+    margin-left: 20px;
+    background-color: #333;
+    /* position: absolute;
+    z-index: 999; */
+    display: none;
+}
+
+ul li:hover ul.dropd{
+    display: block;
+}
+.nav-item{
+    position: relative;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.fas{
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+}
+
+.recherche{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    border: none;
+}
+.research{
+    margin-top: -50px;
+    margin-right: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+}
+
+/* Styles du contenu principal */
+.main-content {
+    flex: 1;
+    margin-left: 0;
+    transition: margin-left 0.3s;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.contenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+}
+.photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 600px;
+
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 600px;
+}
+.details-contenu{
+    width: 400px;
+    height: 600px;
+    margin-left: 40px;
+    margin-top: 70px;
+    padding: 10px;
+}
+h2, .prix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.prix{
+    font-size: 25px;
+    font-weight: bold;
+}
+.taux{
+    font-size: 25px;
+    font-weight: bold;
+    color: #FF8000;
+}
+.prix-taux{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+button{
+    width: 180px;
+    color:white;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #FF8000;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    background-color: #FF8000;
+}
+.boutons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+    margin-right: 75px;
+    gap: 10px;
+}
+
+

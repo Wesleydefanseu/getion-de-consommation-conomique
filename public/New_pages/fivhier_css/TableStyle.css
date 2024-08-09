@@ -1,0 +1,28 @@
+ /* tableau */
+ .tableau-style{
+	border-collapse: collapse;
+	min-width: 400px;
+	height: 60%;
+	width:100% ; 
+	cursor: pointer;
+	margin: 100px auto;
+	border: 2px solid var(--orange);
+	bottom: -15px;
+	
+  }
+  thead tr{
+	background-color: var(--orange);
+	color: var(--light);
+	text-align: center;
+  }
+  th,td{
+	padding: 15px 20px;
+  }
+  tbody tr,td,th{
+	color: var(--dark);
+	border: 1px solid  var(--light);
+  }
+  tbody tr:nth-child(even)
+  {
+  background-color: var(--light-orange);
+  }

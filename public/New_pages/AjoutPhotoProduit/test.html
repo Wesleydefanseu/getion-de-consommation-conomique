@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Interface</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <div class="container1" style="display: grid;grid-template-columns: repeat(4, 1fr);justify-content: space-around;">
+
+        <form  action="@if (isset($edit->id)) {{route('produit.update',['id' => $edit->id]) }} @else {{ route('produit.insert') }} @endif"
+            method="post" enctype="multipart/form-data">
+            <div style="min-width: 400px;max-width: 400px;display: flex;flex-direction: column;padding: 20px;">
+
+                <img id="preview" class="image"
+                    src="@if(isset($edit->id)){{url('/')}}/photoProduit/{{$edit->photo }} @else {{asset('New_Pages/image/levegi.jpeg')}} @endif"
+                    alt="Photo d'entete" onclick="openFileInput() ">
+                <input class="" type="file" accept="image/*" style="display: none;" onchange="displaySelectedImage(event) ">
+                <input id="oldphoto" name="oldphoto" style="display:none"
+                    value="@if(isset($edit->id)){{$edit->photo}}@endif">
+                <div class="form-group" style="margin-top:10px;">
+                    <input type="text" class="form-control" name="nom" id="nom" placeholder="Nom du produit"
+                        value="@if(isset($edit->id)){{$edit->nom}}@endif" required>
+                </div>
+                <div class="form-group">
+                    <textarea style="max-width: 370px;" type="text" class="form-control" placeholder="Description"
+                        name="description" id="description" value="@if(isset($edit->id)){{$edit->description}}@endif"
+                        required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" placeholder="Quantite en stock" name="qty" id="qty"
+                        placeholder="Quantite en stock" value="@if(isset($edit->id)){{$edit->quantite}}@endif" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Prix en FCFA" name="prix" id="prix"
+                        value="@if(isset($edit->id)){{$edit->prix}}@endif" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" name="taux" id="taux" placeholder="Taux (en %)"
+                        value="@if(isset($edit->id)){{$edit->taux}}@endif" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="password" class="form-control" placeholder="Password" required>
+                    <i class="fas fa-eye-slash password-toggle" id="toggle-password"></i>
+                </div>
+    
+                <div class="form-group">
+                    <select class="form-control" name="categorie" id="categorie"
+                        value="@if(isset($edit->id)){{$edit->categorie}}@endif">
+                        @foreach ($data as $item)
+                        <option value="{{$item->id}}">{{$item->nom}}</option>
+                        @endforeach
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <button type="submit" class="btn">{{$title}}</button>
+                </div>
+            </div>
+            <div style="padding: 20px;">
+                <div class="container" style="width: 400px;">
+                    <button id="add-photo-btn">Ajouter une Photo</button>
+                    <div id="photos-container"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+  
+</body>
+
+</html>
